@@ -1,0 +1,12 @@
+exynos8890-smdk8890.o: arch/arm64/boot/dts/exynos8890-smdk8890.dts \
+ arch/arm64/boot/dts/exynos8890.dtsi \
+ include/dt-bindings/clock/exynos8890.h include/dt-bindings/ufs/ufs.h \
+ include/dt-bindings/sysmmu/sysmmu.h \
+ include/dt-bindings/thermal/thermal.h \
+ arch/arm64/boot/dts/exynos8890-pinctrl.dtsi \
+ arch/arm64/boot/dts/exynos8890-busmon.dtsi \
+ arch/arm64/boot/dts/exynos8890-ess.dtsi \
+ arch/arm64/boot/dts/exynos8890-rmem.dtsi \
+ arch/arm64/boot/dts/modem-ss335ap-pdata.dtsi \
+ arch/arm64/boot/dts/exynos8890-sound-wm1840.dtsi \
+ arch/arm64/boot/dts/exynos8890-display-lcd.dtsi

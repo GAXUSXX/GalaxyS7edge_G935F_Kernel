@@ -1,0 +1,13 @@
+exynos8890-universal8890.o: \
+ arch/arm64/boot/dts/exynos8890-universal8890.dts \
+ arch/arm64/boot/dts/exynos8890.dtsi \
+ include/dt-bindings/clock/exynos8890.h include/dt-bindings/ufs/ufs.h \
+ include/dt-bindings/sysmmu/sysmmu.h \
+ include/dt-bindings/thermal/thermal.h \
+ arch/arm64/boot/dts/exynos8890-pinctrl.dtsi \
+ arch/arm64/boot/dts/exynos8890-busmon.dtsi \
+ arch/arm64/boot/dts/exynos8890-ess.dtsi \
+ arch/arm64/boot/dts/exynos8890-rmem.dtsi \
+ arch/arm64/boot/dts/exynos8890-universal8890_common_battery_01.dtsi \
+ arch/arm64/boot/dts/modem-ss335ap-pdata.dtsi \
+ arch/arm64/boot/dts/exynos8890-display-lcd.dtsi
