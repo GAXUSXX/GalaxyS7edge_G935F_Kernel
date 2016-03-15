@@ -1,1 +1,0 @@
-cmd_drivers/video/fbdev/omap2/displays-new/built-in.o :=  rm -f drivers/video/fbdev/omap2/displays-new/built-in.o; /home/gaxus/nexus5/toolchain64/bin/aarch64-linux-android-ar rcsD drivers/video/fbdev/omap2/displays-new/built-in.o

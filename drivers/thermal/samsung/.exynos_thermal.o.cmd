@@ -1,1 +1,0 @@
-cmd_drivers/thermal/samsung/exynos_thermal.o := /home/gaxus/nexus5/toolchain64/bin/aarch64-linux-android-ld -EL    -r -o drivers/thermal/samsung/exynos_thermal.o drivers/thermal/samsung/exynos_tmu.o drivers/thermal/samsung/exynos_tmu_data.o drivers/thermal/samsung/exynos_thermal_common.o 

@@ -1,1 +1,0 @@
-cmd_drivers/net/wireless/built-in.o :=  /home/gaxus/nexus5/toolchain64/bin/aarch64-linux-android-ld -EL    -r -o drivers/net/wireless/built-in.o drivers/net/wireless/bcmdhd4359/built-in.o drivers/net/wireless/bcmdhd4359/dhd_custom_memprealloc.o drivers/net/wireless/bcmdhd4359/dhd_custom_exynos.o 
