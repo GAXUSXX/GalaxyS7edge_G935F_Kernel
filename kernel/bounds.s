@@ -268,7 +268,7 @@ foo:
 	.4byte	.LASF41
 	.byte	0x4
 	.byte	0x3
-	.2byte	0x114
+	.2byte	0x117
 	.4byte	0x15d
 	.uleb128 0x5
 	.4byte	.LASF42
