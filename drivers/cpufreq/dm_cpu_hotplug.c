@@ -741,10 +741,7 @@ static int __ref __cpu_hotplug(bool out_flag, enum hotplug_cmd cmd)
 						}
 					}
 				} else {
-					for (i = 1; i < max_num_cpu; i++) {
-						if (do_hotplug_out && i >= NR_CLUST0_CPUS)
-							goto blk_out;
-
+					for (i = 1; i < NR_CLUST0_CPUS; i++) {
 						if (!cpu_online(i)) {
 							ret = cpu_up(i);
 							if (ret)
@@ -1204,7 +1201,10 @@ static int on_run(void *data)
 
 	while (!kthread_should_stop()) {
 		calc_load();
-		exe_cmd = diagnose_condition();
+		if (unlikely(exe_cmd == CMD_ONLINE || exe_cmd == CMD_OFFLINE))
+				exe_cmd = CMD_CLUST1_OUT;
+			else
+				exe_cmd = diagnose_condition();
 
 		if (exynos_dm_hotplug_disabled()) {
 #ifdef DM_HOTPLUG_DEBUG
