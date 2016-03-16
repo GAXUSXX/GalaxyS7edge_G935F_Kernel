@@ -41,6 +41,9 @@
 static struct gpu_control_ops *ctr_ops;
 extern struct regulator *g3d_m_regulator;
 
+unsigned int gpu_min_override = 260;
+unsigned int gpu_max_override = 650;
+
 #ifdef CONFIG_MALI_RT_PM
 static struct exynos_pm_domain *gpu_get_pm_domain(void)
 {
