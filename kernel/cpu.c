@@ -24,6 +24,8 @@
 
 #include "smpboot.h"
 
+unsigned int cpu_core_smp_status[8] = { 1, 1, 1, 1, 1, 1, 1, 1 };
+
 #ifdef CONFIG_SMP
 /* Serializes the updates to cpu_online_mask, cpu_present_mask */
 static DEFINE_MUTEX(cpu_add_remove_lock);

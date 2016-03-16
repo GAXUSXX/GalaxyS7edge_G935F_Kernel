@@ -44,6 +44,7 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/cpufreq_interactive.h>
 
+u64 get_cpu_idle_time(unsigned int cpu, u64 *wall, int io_busy);
 struct cpufreq_interactive_cpuinfo {
 	struct timer_list cpu_timer;
 	struct timer_list cpu_slack_timer;

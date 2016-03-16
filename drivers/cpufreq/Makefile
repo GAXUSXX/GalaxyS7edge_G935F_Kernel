@@ -1,5 +1,7 @@
 # CPUfreq core
-obj-$(CONFIG_CPU_FREQ)			+= cpufreq.o freq_table.o cpu_load_metric.o
+CFLAGS_dm_cpu_hotplug.o := $(KBUILD_CFLAGS) -Wno-declaration-after-statement
+CFLAGS_cpufreq_ktoonservative.o := $(KBUILD_CFLAGS) -Wno-unused-variable
+obj-$(CONFIG_CPU_FREQ)			+= cpufreq.o freq_table.o cpu_load_metric.o cpufreq_kt.o
 obj-$(CONFIG_PM_OPP)			+= cpufreq_opp.o
 
 # CPUfreq stats
