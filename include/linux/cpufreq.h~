@@ -492,7 +492,6 @@ extern struct cpufreq_governor cpufreq_gov_ktoonservative;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_ktoonservative)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVE)
 extern struct cpufreq_governor cpufreq_gov_interactive;
-u64 get_cpu_idle_time(unsigned int cpu, u64 *wall, int io_busy);
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_interactive)
 #endif
 
