@@ -7,7 +7,7 @@
 wm97xx-ts-y := wm97xx-core.o
 
 # for sweep2wake, leave 1st to avoid merge issues at the end of the file
-obj-$(CONFIG_WAKE_GESTURES)		+= wake_gestures.o
+obj-$(CONFIG_TOUCHSCREEN_SWEEP2WAKE)	+= sweep2wake.o
 
 obj-$(CONFIG_OF_TOUCHSCREEN)		+= of_touchscreen.o
 obj-$(CONFIG_TOUCHSCREEN_88PM860X)	+= 88pm860x-ts.o

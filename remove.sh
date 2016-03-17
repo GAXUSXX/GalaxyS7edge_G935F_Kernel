@@ -5,3 +5,16 @@ git rm --cached ./*/*/*.o
 git rm --cached ./vmlinux.o
 git rm --cached ./*.cmd
 git rm --cached ./*/*/*.cmd
+git rm --cached ./vmlinux.elf
+git rm --cached ./offsets_sizes_fmp.txt
+git rm --cached ./offsets_sizes_crypto.txt
+git rm --cached ./kaslr_fips
+git rm --cached ./include/linux/lcd_notify.h~
+git rm --cached *~
+git rm --cached ./include/config/*
+git rm --cached ./fips_fmp_utils
+git rm --cached ./fips_crypto_utils
+git rm --cached ./*/*/*/*.o
+git rm --cached *.o
+git rm --cached .config
+git rm --cached .config.old
