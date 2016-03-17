@@ -30,7 +30,7 @@
 #include "sysfs_helpers.h"
 
 #ifdef CONFIG_SOC_EXYNOS8890
-#define GPU_MAX_VOLT		1025000
+#define GPU_MAX_VOLT		925000
 #define GPU_MIN_VOLT		500000
 #define GPU_VOLT_STEP		6250
 #else
